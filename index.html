@@ -1,0 +1,34 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>WebApps</title>
+</head>
+<body>
+
+<div id="app" class="app">
+    <h4 class="content-title">Начало игры</h4>
+    <div class="content-header__title">
+        <h3 id="time-header">Время игры: <span id="time-game"></span></h3>
+        <h3 id="result-header">Ваш результат: <span id="result-game"></span></h3>
+    </div>
+    <div class="content-header">
+        <div class="content-header__game">
+
+        </div>
+    </div>
+
+    <div class="button-groups">
+        <label for="time-game-checked">Время игры</label>
+        <input id="time-game-checked" class="time-game-checked" type="number" min="0">
+        <button class="button-groups__start" id="start-game">Начать</button>
+        <button class="button-groups__start" id="stop-game">Стоп</button>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
