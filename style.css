@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .display-none {
     display: none;
 }
+
 /**/
 
 .app {
@@ -14,25 +16,44 @@
     height: 100%;
 }
 
-.content-title, .content-header__title {
-    padding-top: 30px;
-    line-height: 30px;
+.content-header__title {
+    padding-top: 20px;
+    line-height: 10px;
     text-align: center;
 }
+.content-header__title {
+    line-height: 30px;
+}
+
 .content-header__game {
     border: #15fa61 1px solid;
     position: relative;
 }
+
 .background-white {
     background-color: #fff !important;
 }
+
 .content-header {
     background-color: white;
     border-radius: 30px;
     width: 35%;
     height: 60%;
-    margin: 2% auto;
+    margin: 0 auto;
 }
+
+@media screen and (max-width: 900px) {
+    .content-header {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content-header {
+        width: 400px;
+    }
+}
+
 .content-header__game {
     background-color: rgba(21, 250, 97, 0.51);
     height: 80%;

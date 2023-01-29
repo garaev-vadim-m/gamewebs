@@ -10,10 +10,9 @@
 <body>
 
 <div id="app" class="app">
-    <h4 class="content-title">Начало игры</h4>
     <div class="content-header__title">
-        <h3 id="time-header">Время игры: <span id="time-game"></span></h3>
-        <h3 id="result-header">Ваш результат: <span id="result-game"></span></h3>
+        <h3 id="time-header">Время игры: <span id="time-game">5.0</span></h3>
+        <h3 id="result-header" class="display-none">Ваш результат: <span id="result-game"></span></h3>
     </div>
     <div class="content-header">
         <div class="content-header__game">
@@ -23,7 +22,7 @@
 
     <div class="button-groups">
         <label for="time-game-checked">Время игры</label>
-        <input id="time-game-checked" class="time-game-checked" type="number" min="0">
+        <input id="time-game-checked" class="time-game-checked" type="number" min="0" value="5">
         <button class="button-groups__start" id="start-game">Начать</button>
         <button class="button-groups__start" id="stop-game">Стоп</button>
     </div>
